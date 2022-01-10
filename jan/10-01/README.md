@@ -35,4 +35,5 @@ However if you want to pull from the original repo you will use:
 $ git pull upstream main
 ```
 
+This is new for all of us
 Happy coding 🙂
