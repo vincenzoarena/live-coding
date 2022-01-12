@@ -1,0 +1,19 @@
+/*
+Binary: 0-1; 2=0011
+Decimal: 0-9; 10=10
+Hexadecimal: 0-9,A-F; 12=B
+*/
+
+nav {
+  background-color: black;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 3rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
