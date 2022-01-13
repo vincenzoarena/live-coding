@@ -12,8 +12,15 @@ nav ul li {
   display: inline;
   margin-right: 3rem;
 }
+<<<<<<< HEAD
 
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+=======
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+>>>>>>> 8b0f89b8fc4f8e79bac30fa8802b9c19529f2e45
