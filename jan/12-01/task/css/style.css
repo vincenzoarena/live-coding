@@ -1,9 +1,7 @@
 body {
   background-color: #151515;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-decoration: none;
-}
+  }
 nav {
   background-color: #202020;
 }
@@ -24,4 +22,9 @@ nav ul li a {
 
 #uml {
     width: 1rem;
+}
+
+h1 {
+  color: white;
+  text-decoration: none;
 }
