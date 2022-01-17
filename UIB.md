@@ -128,7 +128,7 @@
 - shorthand properties
 - border-radius
 ### Text Formatting
-- color, letter-spacing , Word-spacing
+- color, letter-spacing , word-spacing
 - line-height , text-align, text-indent
 - text-decoration , text-transform 
 ### Css assignment
