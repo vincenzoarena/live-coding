@@ -1,0 +1,28 @@
+.shapes div {
+    width: 9rem;
+    height: 9rem;
+    display: inline-block;
+    border: 2px black solid;
+    margin-left: 3rem
+}
+
+#rettangle {
+    height: 15rem;
+    background: rgb(158, 116, 197);
+}
+
+#triangle {
+    width: 15rem;
+    background-color: rgb(105, 172, 228);
+}
+
+#square { 
+   background: rgb(121, 143, 214);
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    background: rgb(53, 109, 78);
+    border-radius: 50%;
+}
