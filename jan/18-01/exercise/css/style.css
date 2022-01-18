@@ -1,0 +1,15 @@
+img {
+    width: 950px;
+    height: 500px;
+    border: black 2px solid
+}
+
+.fly img{
+    padding:  10px 10px 40px 10px;
+    border: 5px blue solid;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    background-color: white;
+}
