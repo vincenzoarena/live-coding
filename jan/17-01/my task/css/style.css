@@ -12,10 +12,12 @@
 }
 
 #triangle {
-    width: 15rem;
-    background-color: rgb(105, 172, 228);
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #0060A0;
+    border-right: 300px solid transparent;
 }
-
+    
 #square { 
    background: rgb(121, 143, 214);
 }
