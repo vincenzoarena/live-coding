@@ -2,13 +2,13 @@
     width: 9rem;
     height: 9rem;
     display: inline-block;
-    border: 2px black solid;
     margin-left: 3rem
 }
 
 #rettangle {
     height: 15rem;
     background: rgb(158, 116, 197);
+    border: 2px black solid;
 }
 
 #triangle {
@@ -16,15 +16,18 @@
     height: 0;
     border-bottom: 200px solid #0060A0;
     border-right: 300px solid transparent;
+    /* border-top: 300px solid transparent; */
 }
     
 #square { 
    background: rgb(121, 143, 214);
+   border: 2px black solid;
 }
 
 #circle {
     width: 200px;
     height: 200px;
     background: rgb(53, 109, 78);
+    border: 2px black solid;
     border-radius: 50%;
 }

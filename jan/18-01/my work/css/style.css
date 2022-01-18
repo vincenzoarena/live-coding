@@ -1,56 +1,92 @@
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 /* Menu */
+
 nav {
-    background-color: black;
+  background-color: black;
 }
 
 ul li {
-    background-color: black;
-    display: inline;
-    margin-left: 3rem;
-    font-size: 2rem;
-}
+  background-color: black;
+  display: inline;
+  margin-left: 3rem;
+  font-size: 2rem;
+  }
 
-header, nav, ul, li, a, a:visited, a:link {
-    color: white;
-    text-decoration: none;
-    /* text-decoration-color: blue; */
+a, a:visited, a:link {
+  color: white;
+  text-decoration: none;
+  /* text-decoration-color: blue; */
 }
 
 a:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
+  
 /* Font formatting */
 
 h1 {
-    letter-spacing: 10px;
-    text-align: center;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 div {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p {
-    color: rgb(81, 245, 66);
-    /* letter-spacing: 10px; */
-    word-spacing: 10px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    /* text-indent: 4rem; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    /* font-style: italic; */
-    text
+  color: rgb(81, 245, 66);
+  /* letter-spacing: 10px; */
+  word-spacing: 1rem;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* 
+  1 rem * root
+  1 em * parent
+  */
+  font-size: 1em;
+  /* font-style: normal; */
 }
 
-main, div, a {
-    background-color: black;
-    color: red;
+/* Image */
+
+#img1 {
+  border: 5px black solid;
+  padding: 10px 10px 55px 10px;
+  width: 20rem;
+  transform: rotate(20deg);
+  /* margin-left: 300px; */
+  position: absolute;
+  /* bottom: 0;
+  right: -1000px; */
+  top: 20%;
+  left: 10%;
+  z-index: -1;
+  opacity: 0.5;
+  filter: grayscale(100);
+}
+
+img {
+  width: 20rem;
+  height: 20rem;
+  border: 2px black solid;
+  /* transform: rotate(20deg); */
+}
+
+#img1:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* Table */
+
+table, tr, td, th {
+  border: 2px red solid;
+  width: 1rem;
 }
