@@ -81,20 +81,35 @@ p ~ span {
 
 /* [attribute~=value] Selector
     containing the value */
+[alt~="tree"] {
+  width: 12rem;
+}
 
 /* [attribute^=value] Selector
     begins with the value */
-
+[title^="Here"] {
+  border: 2px red dashed;
+}
 /* [attribute$=value] Selector
     value ends with  */
-
+[title$="data"] {
+  background-color: black;
+}
 /* [attribute*=value] Selector
     contains the substring */
+/* [class*="long"] {
+  border: 2px black dashed;
+} */
 
+[title*="long"] {
+  border: 5px black solid;
+}
 /* pseudo class  */
 /* specifies a special state for that element */
 /* :hover */
-
+table:hover {
+  background-color: grey;
+}
 /* :visited */
 
 /* :focus */
