@@ -53,5 +53,60 @@ p ~ span {
 
 [type="submit"] {
     border: none;
-    
+    background-color: black;
+    color: aliceblue;
+}
+[alt^="Ross"] {
+    width: 12rem;
+}
+[title⁼="Here"] {
+    border: 2px red dashed;
+}
+
+[title$="data"] {
+    background-color: darkred;
+}
+
+[title*="long"] {
+    border: 2px black solid;
+}
+table:hover {
+    background-color: cyan;
+    opacity: 70;
+}
+
+a, a:visited, a:link {
+    color: green;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 5%;
+    border: 2px black solid;
+    padding: 5px 10px;
+    margin-top: 0.5rem;
+    position: absolute;
+}
+
+input[type=""text]:focus {
+    outline: none;
+    border: 2px green solid;
+}
+[type="checkbox"]:checked {
+    width: 3rem;
+}
+
+a:active {
+    background-color: red;
+}
+
+tr:nth-child(1) {
+    background-color: darkslategray;
+    color: floralwhite;
+}
+
+tr:nth-child(2n+2) {
+    background-color: gray;
+}
+
+tr:nth-child(2n+3) {
+    background-color: lightgray;
 }
