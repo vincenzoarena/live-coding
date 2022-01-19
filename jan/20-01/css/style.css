@@ -1,9 +1,8 @@
 /* 
-things you might want to pay more attention to
-  z-index: 99; Not good idea
-  images are broken
-  no index.html on the root directory
-  more DRY css files
+things you might want to pay more attention to:
+  z-index: 99; Not good idea!!
+  Alway have index.html on the root directory
+  More DRY css files
   If you are using Mac you need .gitignore for .DB_Store
   SORT files and directories
 */
