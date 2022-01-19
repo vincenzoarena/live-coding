@@ -47,16 +47,27 @@ span {
 p i {
   font-size: 3rem;
 }
+header li {
+  background-color: black;
+  color: wheat;
+}
 /* element>element	 Selector  
     element parent element 
     */
-
+div > p {
+  background-color: aqua;
+}
 /* element+element  Selector
     element immediately after element */
-
+div + p {
+  color: brown;
+}
 /* element1~element2 Selector 
     element preceded element */
-
+p ~ span {
+  font-size: 10rem;
+  background-color: darkcyan;
+}
 /* [attribute] Selector */
 
 /* [attribute=value] Selector  */
