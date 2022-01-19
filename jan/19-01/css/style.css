@@ -21,6 +21,7 @@ things you might want to pay more attention to:
 /* Element selector */
 html {
   background-color: orange;
+  font-size: 4rem;
 }
 
 /* #ID selector */
@@ -111,11 +112,32 @@ table:hover {
   background-color: grey;
 }
 /* :visited */
+a,
+a:visited,
+a:link {
+  color: green;
+}
 
 /* :focus */
+input[type="text"]:focus {
+  outline: none;
+  border: 2px pink solid;
+}
 
 /* :active */
+a:active {
+  background-color: red;
+}
 
 /* :checked */
 
+[type="checkbox"]:checked {
+  width: 3rem;
+}
 /* :nth-child() */
+/* tr:nth-child(1) {
+  background-color: black;
+} */
+tr:nth-child(3n + 2) {
+  background-color: black;
+}
