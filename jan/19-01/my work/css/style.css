@@ -50,3 +50,8 @@ p ~ span {
 [id] {
     background-color: brown;
 }
+
+[type="submit"] {
+    border: none;
+    
+}
