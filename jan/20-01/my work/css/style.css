@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Hey, I have something for you! */
+    --my-color: rgb(20, 153, 120);
+    --my-font-size: 3rem;
+    --other-color: rgba(222, 33 5, 0.5);
+    --header-font-face: font-family: 'Azeret Mono', monospace;
+    --box-width: 3rem;
+    --img-height: 44rem;
+}
+
+body {
+    color: var(--my-color);
+}
+
+h1 {
+    border: 2px var(--my-color) solid;
+}
