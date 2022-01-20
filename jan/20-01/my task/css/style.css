@@ -6,4 +6,19 @@
 
 :root {
     font-size: 16px;
+    background-color: gray;
+}
+
+nav {
+    background-color: rgb(139, 67, 0);
+    border: 5px black double;
+}
+
+a:link {
+    background-color: green;
+}
+
+:any-link {
+    color: wheat;
+    text-decoration: none;
 }
