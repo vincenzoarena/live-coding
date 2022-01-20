@@ -227,4 +227,19 @@
 - pseudo child selectors: `:nth-child() 
 ### Forms and Dynamic Data
 - Searching - `<form>`, `<input>`
-  
+
+----
+## [20.01](https://github.com/FbW-WD21-E11/live-coding/tree/main/jan/20-01) Pseudo classes and elements
+### Review 
+### CSS Variables: 
+  Defining in `:root { --[name]: [value] }`
+### pseudo elements VS  pseudo classes
+#### pseudo elements
+- `::after` `::before ` 
+- `::first-letter` 
+- `::placeholder` for styling `placeholder` text
+- Using MDN to locate additional selectors, combinators, elements and rules
+### CSS units
+- `vh` and `vw`
+- Use cases for the different units
+#### Presentation pseudo classes and elements
