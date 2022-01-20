@@ -9,9 +9,20 @@
     background-color: gray;
 }
 
-nav {
+header {
     background-color: rgb(139, 67, 0);
     border: 5px black double;
+    border-radius: 26px;
+    width: 100%;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 5rem;
+}
+
+h1, h2 {
+   text-align: center;
 }
 
 a:link {
@@ -21,4 +32,19 @@ a:link {
 :any-link {
     color: wheat;
     text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    background-color: rgb(139, 67, 0);
+    border: 5px black double;
+    border-radius: 26px;
+}
+
+footer div {
+    display: inline-flex;
+    margin-left: 10rem;
+    align-items: center;
 }
