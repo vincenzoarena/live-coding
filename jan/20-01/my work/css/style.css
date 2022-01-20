@@ -5,10 +5,11 @@
 }
 
 :root {
+    font-size: 16px;
     /* Hey, I have something for you! */
     --my-color: rgb(20, 153, 120);
     --my-font-size: 3rem;
-    --other-color: rgba(222, 33 5, 0.5);
+    --other-color: rgba(222, 33, 5, 0.5);
     --header-font-face: font-family: 'Azeret Mono', monospace;
     --box-width: 3rem;
     --img-height: 44rem;
@@ -20,4 +21,41 @@ body {
 
 h1 {
     border: 2px var(--my-color) solid;
+}
+
+h1::after {
+    content: "🤓🖖";
+}
+
+h1::before {
+    content: "🍻";
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: var(--my-color);
+}
+
+p::first-letter {
+    color: var(--other-color);
+    /* font-size: 4rem */
+    /* Option 1: font-size: var(--my-font-size); */
+    /* Option 2: font-size: calc(var(--my-font-size) - 1rem); */
+    /* Option 3: font-size: calc(10px * 1rem); */
+    /* Option 4: Very common
+    font-size: calc(var(--my-font-size) * 10%);*/
+    font-size: calc(var(--my-font-size) * 1);
+}
+
+div {
+    border: 2px black solid;
+}
+
+.x-men {
+    /* View Port Width */
+    width: 15vw;
+    /* View Port Height */
+    height: 15vh;
+    filter: grayscale(0.5);
+   /*  opacity: 0.1; */
+    display: none;
 }
