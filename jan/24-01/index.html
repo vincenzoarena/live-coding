@@ -35,12 +35,20 @@
         <input type="color" name="color" id="4" />
         <input type="time" name="" id="5" />
         <input type="number" min="1" max="100" id="6" required />
-        <select name="season" id="7" aria-placeholder="Season">
+        <select name="season" id="7">
           <option value="summer">Summer</option>
           <option value="autumn">Autumn</option>
           <option value="winter">Winter</option>
           <option value="spring">Spring</option>
         </select>
+
+        <section class="toggle" id="7">
+          <label class="toggle-lable"> Wants more info?</label>
+          <label class="switch">
+            <input type="checkbox" name="agree" />
+            <span class="slider"></span>
+          </label>
+        </section>
       </fieldset>
 
       <input type="submit" value="send" />
