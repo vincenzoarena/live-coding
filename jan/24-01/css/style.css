@@ -51,6 +51,25 @@ select:focus {
   height: 0;
 }
 /* The switch */
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border: 2px red dashed;
+  margin-left: 1rem;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 2px orange dashed;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 5rem;
+  transition: 0.2s;
+}
 
 /* font-awesome */
 i {
