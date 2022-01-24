@@ -14,6 +14,27 @@ body {
   height: 100vh;
 }
 /* form */
+form {
+  margin: 25% auto;
+  width: 50%;
+  height: 50%;
+}
+fieldset input,
+select {
+  margin: 2vh auto;
+  display: block;
+  width: 40%;
+  border-radius: 2%;
+  border: none;
+  border-bottom: 2px gray solid;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+fieldset input:focus,
+select:focus {
+  outline: none;
+  border-bottom: 2px orange solid;
+}
 
 /* fancy checkbox */
 
