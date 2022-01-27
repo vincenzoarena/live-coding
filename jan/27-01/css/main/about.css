@@ -21,8 +21,9 @@
   border-radius: 2%;
   text-align: center;
   line-height: 2rem;
+  background-color: bisque;
 }
-.eat {
+/* .eat {
   background-color: bisque;
 }
 .sleep {
@@ -33,4 +34,4 @@
 }
 .repeat {
   background-color: mistyrose;
-}
+} */

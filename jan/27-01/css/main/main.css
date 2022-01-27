@@ -4,6 +4,7 @@
 @import url(./story.css);
 @import url(./about.css);
 @import url(./avatar.css);
+@import url(./soon.css);
 /*  Main   */
 .main-container {
   width: 100vw;
