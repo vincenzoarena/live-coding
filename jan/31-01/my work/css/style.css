@@ -1,3 +1,7 @@
+body {
+    background-color: cadetblue;
+}
+
 div {
     border: 2px black solid;
 }
@@ -21,9 +25,9 @@ div {
     background-color: gray;
 }
 .item-a ul {
-    display: inline-flex;
-    justify-content: center;
-    align-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
     list-style: none;
 }
 
@@ -38,4 +42,8 @@ div {
 .item-d {
     grid-area: footer;
     background-color: blue;
+}
+a:any-link {
+    color: white;
+    text-decoration: none;
 }
