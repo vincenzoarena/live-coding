@@ -1,0 +1,41 @@
+div {
+    border: 2px black solid;
+}
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; It's equal to the next line*/
+    /* grid-template-columns: repeat(4, 1fr) */
+    /* grid-template-columns: minmax(250px 50vw) 1fr; */
+    /* grid-template-columns: repeat(4, minmax(250px, 500px)); */
+    /* grid-template-rows: 5vh repeat(4, 75vh) repeat(2, 50vh) 10vh; */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "menu menu menu"
+    "main main about"
+    "footer footer none";
+}
+
+.item-a {
+    grid-area: menu;
+    background-color: gray;
+}
+.item-a ul {
+    display: inline-flex;
+    justify-content: center;
+    align-content: space-evenly;
+    list-style: none;
+}
+
+.item-b {
+    grid-area: main;
+    background-color: red;
+}
+.item-c {
+    grid-area: about;
+    background-color: orange;
+}
+.item-d {
+    grid-area: footer;
+    background-color: blue;
+}
