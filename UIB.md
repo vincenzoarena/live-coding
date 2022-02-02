@@ -365,3 +365,6 @@ Defining in `:root { --[name]: [value] }`
 
 -------
 
+## 02.02  Html / Css assignment 
+### Q & A 
+### working on Youtube clone assignment using Grid and FlexBox
