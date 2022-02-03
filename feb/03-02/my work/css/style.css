@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: orange;
+  }
+
+  /* I'll delete all our previous videos */
+  @media print {
+      body {
+          background-color: pink;
+      }
+      .text{
+          color: blue;
+      }
+  }
+  /* print */
+  
+  /* screen */
+
+  @media only screen and (min-with:500px) {
+    body {
+        background-color: black;
+    }
+    .text {
+
+    }
+    h1 {
+
+    }
+}
+
+@media only screen and (min-with:1500px) {
+    body {
+        background-color: aqua;
+        color: peru;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: deeppink;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+  
+/* hamburger menu */
+.hamburger {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 2px dashed black;
+}
+
+.hamburger div {
+    width: 2.5rem;
+    background-color: black;
+    border: 2px darkgray solid;
+    border-radius: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-menu{
+    display: none;
+}
+
+/* Just to understand how to do it */
+/* .hamburger:hover + .side-menu {
+    display: block;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 5%;
+    left: 0;
+    z-index: 1;
+} */
