@@ -17,41 +17,42 @@ header a {
   color: white;
 }
 .list-item {
-    list-style: none;
-    font-size: 1rem;
-    color: white;
-    padding: 0.5rem;
-    background-color: orange;
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+  background-color: orange;
 }
 .subnavbtn {
-    border: none;
-    background-color: inherit;
-    font-size: 1.2rem;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  background-color: inherit;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .subnav-content {
-    display: none;
+  display: none;
 }
-/* Dropdown menu */
+/* dropdown menu */
 .subnav:hover .subnav-content {
-    display: block;
-    transition: all 0.5s ease-in;
+  display: block;
+  transition: all 0.5s ease-in;
 }
-
 .list-item:hover {
-    background-color: lightgray;
-    color: orange;
-    transition: all 0.5s ease-in;
+  background-color: lightgray;
+  color: orange;
+  transition: all 0.5s ease-in;
 }
+/* fancy shapes */
 header::before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 20%;
-    bottom: 10%;
-    background-color: orange;
-    width: 80%;
-    height: 100%;
-    border-radius: 50%;
-    z-index: -1}
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  background-color: orange;
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
