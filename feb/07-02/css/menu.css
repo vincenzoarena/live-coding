@@ -1,1 +1,9 @@
 /* menu */
+header {
+    height: 100%;
+    /* z-index: 1; */
+}
+
+.subnav-content {
+    display: none;
+}

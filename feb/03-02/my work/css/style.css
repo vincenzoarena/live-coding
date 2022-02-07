@@ -8,16 +8,18 @@
   }
 
   /* I'll delete all our previous videos */
-  @media print {
-      body {
-          background-color: pink;
-      }
-      .text{
-          color: blue;
-      }
-  }
+  
   /* print */
   
+  @media print {
+    body {
+        background-color: pink;
+    }
+    .text{
+        color: blue;
+    }
+}
+
   /* screen */
 
   @media only screen and (min-with:500px) {

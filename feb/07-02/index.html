@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Menu -->
     <header>
       <nav class="navbar">
         <nav class="subnav">
@@ -73,6 +74,7 @@
         </article>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <ul class="footer-menu">
         <li><a href="#" class="list-item">Jobs</a></li>
@@ -82,8 +84,13 @@
       <hr />
       <div>
         <h5>Made with ❤️ by Hadi</h5>
-        <h6>Copyright © 2022. All rights reserved.</h6>
+        <h6>Copyright © <span class="year"></span>. All rights reserved.</h6>
       </div>
     </footer>
+    <script>
+      let span = document.querySelector(".year");
+      let year = new Date().getFullYear();
+      span.innerHTML = year;
+    </script>
   </body>
 </html>
