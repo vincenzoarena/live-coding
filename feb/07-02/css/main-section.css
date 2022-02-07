@@ -1,7 +1,7 @@
 /* main-section */
 .intro-container {
   grid-area: intro;
-  background-color: rgba(76, 76, 232, 0.912);
+  background-color: rgb(76, 76, 232);
   height: 100%;
 }
 .products-container {
