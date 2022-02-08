@@ -7,3 +7,61 @@
   /* some var */
   --the-best-color: orange;
 }
+.box {
+  width: 3rem;
+  height: 2rem;
+  background-color: var(--the-best-color);
+  /* Step 1 ani name */
+  animation-name: move;
+  /* Step 2 ani for */
+  animation-direction: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+
+}
+
+/* Step 3 your keyframes*/
+@keyframes move {
+  0% {
+    width: 4rem;
+  }
+  50% {
+    width: 10rem;
+    background-color: aqua;
+  }
+  100% {
+    width: 50rem;
+    background-color: black;
+  }
+ /*  from{
+    width: 3rem;
+    background-color: aqua;
+  }
+  to {
+    width: 15rem;
+  } */
+}
+
+.shape {
+  width: 3rem;
+  height: 2rem;
+  background-color: pink;
+  animation-name: change;
+  animation-direction: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+/* here */
+@keyframes change {
+  /* from {
+    display: block;
+  }
+  to {
+    opacity: 0;
+  } */
+  0%{
+    opacity: 0;
+  }
+  50%{ opacity: 0.5;}
+  100%{}
+}
