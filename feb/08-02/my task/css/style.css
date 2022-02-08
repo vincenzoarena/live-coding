@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    /* some var */
+    --ball1-color-1: rgb(255, 123, 0);
+    --ball1-color-2: rgb(255, 72, 0);
+    --ball1-color-3: rgb(144, 5, 5);
+    --ball2-color-1: rgb(2, 255, 87);
+    --ball2-color-2: rgb(2, 255, 179);
+    --ball2-color-3: rgb(2, 247, 255);
+    --ball2-color-4: rgb(2, 175, 255);
+    --ball2-color-5: rgb(2, 82, 255);
+    --ball2-color-6: rgb(27, 2, 255);
+  }
+  .ball1 {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--ball1-color-1);
+    /* step num 1 animation-name */
+    animation-name: move;
+    /* step num 2 animation for how long*/
+    animation-duration: 2s;
+    /* opt */
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+  }
+  /* step 3 your keyframes */
+  @keyframes move {
+    0% {
+      width: 4rem;
+      height: 4rem;
+    }
+    50% {
+      width: 10rem;
+      height: 10rem;
+      background-color: var(--ball1-color-2);
+    }
+    100% {
+      width: 50rem;
+      height: 50rem;
+      background-color: var(--ball1-color-3);
+    }
+  }
+  /* other way for keyframes */
+  /* 
+  from {
+     
+    }
+    to {
+      
+    }
+  */
+  .ball2 {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--ball2-color-1);
+    animation-name: change;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    display: block;
+    position: absolute;
+  }
+  /* here */
+  @keyframes change {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    20% {
+      top: 50%;
+      left: 10%;
+      background-color: var(--ball2-color-2);
+    }
+    40% {
+      top: 0;
+      left: 30%;
+      background-color: var(--ball2-color-3);
+    }
+    60% {
+      top: 70%;
+      left: 50%;
+      background-color: var(--ball2-color-4);
+    }
+    80% {
+      top: 0;
+      left: 90%;
+      background-color: var(--ball2-color-5);
+    }
+    100% {
+      top: 100%;
+      left: 100%;
+      background-color: var(--ball2-color-6);
+    }
+  }
