@@ -1,5 +1,5 @@
 /* Styling the Menu */
-.burger-1 {
+.burger-01 {
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
 }
-.burger-1 div {
+.burger-01 div {
     width: 2.5rem;
     height: 0.5rem;
     background-color: black;
@@ -15,12 +15,12 @@
     border: 1px black solid;
 }
 /* Transforming the Menu */
-.burger-1:hover > :nth-child(1){
-    transform: translateY(12px) rotate(135deg);
+.burger-01:hover > :nth-child(1){
+    transform: translate(0, 12px) rotate(135deg);
 }
-.burger-1:hover > :nth-child(2){
+.burger-01:hover > :nth-child(2){
     display: none;
 }
-.burger-1:hover > :nth-child(3){
-    transform: translateY(-12px) rotate(-135deg);
+.burger-01:hover > :nth-child(3){
+    transform: translate(-5px,-17px) rotate(-135deg);
 }
