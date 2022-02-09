@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(./burger.css);
+@import url(./normal.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+}
+:root {
+    /* Var */
+    --company-styled-font: 'Heebo', sans-serif;
+}
+
+body{
+    font-family: var(--company-styled-font);
+}
+/* Menu */
+nav{
+    width: 20vw;
+    height: 50vh;
+    display: none;
+    /* border: 2px red dashed; */
+    background-color: rgb(27, 27, 27);
+    padding: 2vh;
+    transition: 0.2 ease-in;
+    /*  Step 1 */
+    animation-name: dropdown-menu-move;
+    /* Step 2 */
+    animation-duration: 1s;
+}
+@keyframes dropdown-menu-move {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 30vh;
+        opacity: 1;
+    }
+}
+@keyframes roll-up-menu-move {
+    from {
+        height: 1;
+        opacity: 30vh;
+    }
+    to {
+        height: 0;
+        opacity: 0;
+    }
+}
+/* animation-name: roll-up-menu-move; */
+/*  Anchors' style */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+nav ul li{
+    width: 100%;
+}
