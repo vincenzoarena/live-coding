@@ -1,0 +1,11 @@
+@import url(./burger01.css);
+@import url(./burger02.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    background-color: gray;
+}
