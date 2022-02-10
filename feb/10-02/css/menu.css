@@ -11,7 +11,10 @@ header form {
   display: none;
 }
 header nav .menu {
-  /* align-self: flex-end; */
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* hamburger */
 .hamburger {
@@ -24,6 +27,6 @@ header nav .menu {
 }
 .hamburger div {
   width: 2.5rem;
-  border: 2px black solid;
-  background-color: black;
+  border: 2px gray solid;
+  background-color: gray;
 }
