@@ -1,5 +1,5 @@
 /* Styling the Menu */
-.burger-03 {
+.gradient {
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -7,23 +7,23 @@
     align-items: center;
     flex-direction: column;
 }
-.burger-03 div {
+.gradient div {
     width: 2.5rem;
     height: 0.5rem;
     background-color: black;
     border-radius: 26px;
     border: 1px black solid;
 }
-.burger-03:hover > :nth-child(1){
+.gradient:hover > :nth-child(1){
     width: 50%;
     height: 50%;
     border-radius: 50%;
     background: radial-gradient(circle at center, red 0, blue, green 100%);
 }
-.burger-03:hover > :nth-child(2){
+.gradient:hover > :nth-child(2){
     display: none;
 }
-.burger-03:hover > :nth-child(3){
+.gradient:hover > :nth-child(3){
     width: 50%;
     height: 50%;
     border-radius: 50%;

@@ -1,5 +1,4 @@
-/* Styling the Menu */
-.x-menu {
+.o-x {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -10,9 +9,9 @@
     width: 50px;
 }
   
-.x-menu:before,
-.x-menu:after,
-.x-menu div {
+.o-x:before,
+.o-x:after,
+.o-x div {
     background: #000;
     content: "";
     display: block;
@@ -21,12 +20,16 @@
     margin: 7px 0;
     transition: 0.5s;
 }
-.x-menu-01:hover:before {
+.o-x:hover:before {
     transform: translateY(12px) rotate(135deg);
 }
-.x-menu:hover:after {
+.o-x:hover:after {
     transform: translateY(-12px) rotate(-135deg);
 }
-.x-menu:hover div {
+.o-x:hover div {
     transform: scale(0);
+}
+.o-x:hover {
+    border: 2px solid black;
+    border-radius: 50%;
 }
