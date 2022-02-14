@@ -30,12 +30,11 @@ body {
     width: 75%;
     height: 75%;
     flex-direction: column;
-    border: 1px black solid;
     background-color: teal;
-    box-shadow: rgba(0, 0, 0, 0.418)  2rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.418)  2rem 3rem 3rem;
 }
 
-.menus-up article{
+.menus article{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,4 +58,5 @@ body {
     background-color: black;
     border: 1px black solid;
     border-radius: 26px;
+    transition: 0.5s;
 }

@@ -14,18 +14,13 @@
     border-radius: 26px;
     border: 1px black solid;
 }
-.gradient:hover > :nth-child(1){
+.gradient:hover > :nth-child(1), .gradient:hover > :nth-child(3){
     width: 50%;
     height: 50%;
+    border: 3px black solid;
     border-radius: 50%;
     background: radial-gradient(circle at center, red 0, blue, green 100%);
 }
 .gradient:hover > :nth-child(2){
     display: none;
-}
-.gradient:hover > :nth-child(3){
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, red 0, blue, green 100%);
 }

@@ -1,26 +1,4 @@
 /* Styling the Menu */
-.x-menu {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    width: 50px;
-}
-  
-.x-menu:before,
-.x-menu:after,
-.x-menu div {
-    background: #000;
-    content: "";
-    display: block;
-    height: 6px;
-    border-radius: 3px;
-    margin: 7px 0;
-    transition: 0.5s;
-}
 .x-menu-01:hover:before {
     transform: translateY(12px) rotate(135deg);
 }

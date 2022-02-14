@@ -1,0 +1,8 @@
+.dash:hover> :nth-child(1), .dash:hover> :nth-child(3){
+    display: none;
+}
+.dash:hover > :nth-child(2){
+    border: 3px black solid;
+    border-radius: 26px;
+    background-color: black;
+}
