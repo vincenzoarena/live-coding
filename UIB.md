@@ -433,5 +433,5 @@ Defining in `:root { --[name]: [value] }`
 
 ----
 
-## [14.02](https://github.com/FbW-WD21-E11/live-coding/tree/main/feb/10-02) Valentine's Day animation ❤️
+## [14.02](https://github.com/FbW-WD21-E11/live-coding/tree/main/feb/for-you-all) Valentine's Day animation ❤️
 ###  Revision and Practice
