@@ -16,6 +16,7 @@
 body {
   width: 100vw;
   display: grid;
+  background-color: #202020;
   /* if you needed aside menu */
   /* grid-template-columns: 10vw 1fr;
   grid-template-rows: 5vh repeat(3, 60vh) 10vh;

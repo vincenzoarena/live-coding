@@ -8,7 +8,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: orange;
+    background: rgb(255, 255, 255);
     /* overflow: scroll; */
   }
   footer ul {
