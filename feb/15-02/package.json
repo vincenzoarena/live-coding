@@ -15,10 +15,16 @@
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
     "publish": "gh-pages -d dist"
   },
+<<<<<<< HEAD
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+=======
+  "author": "Hadi",
+  "license": "ISC",
+  "dependencies": {
+>>>>>>> 5182b7e6f1b83f1f5aa35e0717423854eeb74f8e
     "gh-pages": "^3.2.3",
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",

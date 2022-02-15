@@ -10,7 +10,11 @@ header nav {
 }
 header ul,
 header form {
-  display: none;
+display: none;
+}
+header ul,
+header form {
+display: none;
 }
 header nav .menu {
   width: 30vw;

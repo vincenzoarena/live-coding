@@ -21,9 +21,9 @@ body {
   body {
     grid-template-rows: 15vh repeat(4, 75vh);
   }
-  header nav .menu {
+/*   header nav .menu {
     display: none;
-  }
+  } */
 }
 @media only screen and (max-width: 750px) {
   body {
@@ -31,6 +31,6 @@ body {
   }
   header nav .menu {
     border: 2px orange solid;
-    display: none;
+    /* display: none; */
   }
 }
