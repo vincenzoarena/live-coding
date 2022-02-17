@@ -33,11 +33,8 @@ header {
                     color: #ffffff;
                     text-decoration: none;
                     font-size: 1.5rem;
-                    &:hover{
-
-                    }
-                    &:active{
-
+                    &:hover, &:active{
+                        color:black;
                     }
                 }
             }
