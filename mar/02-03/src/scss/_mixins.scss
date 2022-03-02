@@ -51,6 +51,26 @@ div {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+@mixin show-border($size, $type, $color){
+  border: $size $type $color;
+}
+@mixin delete-border{
+  border: none;
+}
+@mixin gradient{
+  background: linear-gradient(red orange yellow green blue indigo violet);
+}
+
+@mixin bg {
+  background: aquamarine;
+}
+@mixin colorshift {
+  animation-name: color-shift;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 // Animations with mixins
 .box {
   background-color: purple;
@@ -79,6 +99,65 @@ $box2-width: 3rem;
   background-color: black;
   // calling my mixins
   @include box-size-with-random-val($box2-width, 2rem);
-  @include fade-in(10s);
+  @include fade-in(10s); 
   height: 5rem;
+}
+/* @keyframes border {
+  0% {
+    @include show-border();
+  }
+  100% {
+    @include delete-border();
+  }
+} */
+.box4 {
+  background: aquamarine,;
+  @include box-size-with-random-val(5rem, 9rem);
+  @include colorshift();
+}
+@keyframes color-shift{
+  0%{
+    background: linear-gradient(aqua, aquamarine);
+    @include show-border(20px, solid, white);
+  }
+  10%{
+    background: linear-gradient(aquamarine, red);
+    @include delete-border();
+  }
+  20%{
+    background: linear-gradient(red, orange);
+    @include show-border(30px, double, white);
+  }
+  30%{
+    background: linear-gradient(orange, yellow);
+    @include delete-border();
+  }
+  40%{
+    background: linear-gradient(yellow, green);
+    @include show-border(20px, dotted, white);
+  }
+  50%{
+    background: linear-gradient(green, blue);
+    @include delete-border();
+  }
+  60%{
+    background: linear-gradient(blue, indigo);
+    @include show-border(30px, double, white);
+  }
+  70%{
+    background: linear-gradient(indigo,violet);
+    @include delete-border();
+  }
+  80%{
+    background: violet, aquamarine;
+    @include show-border(20px, solid, white);
+  }
+  90%{
+    background: linear-gradient(aquamarine, aqua);
+    @include delete-border();
+  }
+  100%{
+    background: linear-gradient(aqua, aquamarine);
+    @include show-border(30px, dotted, white);
+  }
 }
