@@ -2,7 +2,13 @@
 $xs-font-size: 12px;
 $sm-font-size: 14px;
 
-$font-sizes: (
+$orange-colors: (
+  light: #fca82b,
+  dark: #fc952b,
+  super: #fc9a00,
+);
+
+$map-font-sizes: (
   xs: 12px,
   sm: 14px,
   m: 16px,
@@ -10,8 +16,21 @@ $font-sizes: (
   xl: 20px,
   xxl: 22px,
 );
-$orange-colors: (
-  light: #fca82b,
-  dark: #fc952b,
-  super: #fc9a00,
-);
+// This is the best use for MAPS 😉
+@mixin font-size($size) {
+    @if map-has-key($map-font-sizes, $size){
+// True
+        font-size: map-get($map-font-sizes, $size);        
+    } @else {
+// False
+     @error "#{$size} is not defined!";        
+    }
+}
+// This is the best use for MAPS 😉 using FUNCTION
+@function font-size($size){
+    @if map-has-key($map-font-sizes, $size){
+        @return map-get($map-font-sizes, $size);
+    } @else {
+        @error "#{$size} is not okay!";
+    }
+}
