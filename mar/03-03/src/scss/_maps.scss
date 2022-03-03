@@ -1,0 +1,15 @@
+// Maps in Sass holds pairs of keys and values, and make it easy to look up a value by its corresponding key.
+
+$font-sizes: (
+    xs:12px,
+    sm:14px,
+    m:16px,
+    l:18px,
+    xl:20px,
+    xxl:22px,
+);
+$orange-colors: (
+    light:#FCA82B,
+    dark: #FC952B,
+    super: #FC9A00,
+);
