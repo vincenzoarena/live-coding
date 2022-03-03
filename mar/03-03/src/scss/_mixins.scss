@@ -7,10 +7,18 @@
 //
 @mixin box-sizing($width, $height, $bg) {
   height: $height;
+  background-color: $bg;
+  border-radius: 50%;
   width: $width;
   background-color: $bg;
   border-radius: 50%;
   width: $width;
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: row;
 }
 @mixin flex($justify, $align) {
   display: flex;
