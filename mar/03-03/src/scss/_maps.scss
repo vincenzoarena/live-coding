@@ -10,6 +10,16 @@ $font-sizes: (
   xl: 20px,
   xxl: 22px,
 );
+// this is the best ues for maps 😉
+@mixin font-size($size) {
+  @if map-has-key($font-sizes, $size) {
+    //true
+    font-size: map-get($font-sizes, $size);
+  } @else {
+    //false
+    @error "This is not defined.";
+  }
+}
 $orange-colors: (
   light: #fca82b,
   dark: #fc952b,
