@@ -1,0 +1,14 @@
+@function find-div-width($map-key){
+    // @return "something";
+    @if map-has-key($div-width, $map-key){
+        @return map-get($div-width, $map-key);
+    } @else {
+        @error " #{$map-key} is not defined, please use #{map-keys($div-width)}";
+    }
+}
+
+.box3{
+    width: find-div-width("xl");
+    background-color: gray;
+    height: 5rem;
+}

@@ -1,0 +1,44 @@
+@keyframes move {
+    from{
+        transform: scale(1);
+        transform: rotate3d(0);
+    }
+    to{
+        transform: scale(1.5);
+        transform: rotate3d(0, 1, 0.5, 3.142rad);
+    }
+}
+.main-box{
+    display: grid;
+    grid-template-columns: repeat($item-count, 1fr);
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+@mixin move-animation-setup($duration){
+    animation-name: move;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@for $i from 1 through $item-count{
+    //Hey I go from 1 to 30 and every round add by one
+    .item:nth-child(#{$i}){
+        background-color: lighten(rgb(255, 0, 0), random(40));
+        height: random(40) + vh;
+        width:  random(40) + vw;
+        border-radius: 50%;
+        border: 5px solid rgba(128, 128, 128, 0.473);
+/* == Equal to, != Not Equal to, > Greater than, < Minor than, >= Greater or Equal to, <= Minor or Equal to */
+// @if ($i % 2 == 0) even
+// @if ($i % 2 != 0) odd
+        @if ($i % 2 != 0){
+            background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+            border: 5px solid rgba(128, 128, 128, 0.473);;
+            align-self: end;
+            border-radius: 0;
+        }
+        @include move-animation-setup(random(3) +s);
+    }
+    // i + 1
+}
