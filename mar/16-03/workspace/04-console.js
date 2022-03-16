@@ -14,6 +14,6 @@ console.log("hello", "world");
 let firstName = "Carlo"
 let city = "Berlin"
 
-console.log(firstName);
+console.log(firstName, city);
 
-console.log(city);
+console.log(firstName, "lives in", "\n", city);
