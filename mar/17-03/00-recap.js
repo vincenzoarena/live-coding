@@ -1,5 +1,6 @@
-// 3 ways of declaring variables
 /**
+ * 3 ways of declaring variables
+ * 
  * var (we shouldn't use this)
  * let
  * const (this declares a constant variable)
