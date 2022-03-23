@@ -33,7 +33,8 @@ console.log(Math.floor(10.1)); //10
 console.log(Math.ceil(1.9)); // 2
 console.log(Math.ceil(10.1)); // 11
 
-console.log(Math.round()); //
-console.log(Math.round()); //
-console.log(Math.round()); //
-console.log(Math.round()); //
+
+console.log(Math.round(0.2)); // 0
+console.log(Math.round(0.6)); // 1
+console.log(Math.round(11.5)); // 12
+console.log(Math.round(8.85)); // 9
