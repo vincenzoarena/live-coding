@@ -6,7 +6,7 @@
  * - the start index is including: if I use index 1, I'm including the character at index 1
  * - the end index is excluding: if I use index 5, I'm only including characters until index 4
  * 
- * If I specity only the starting index, I will get a string from that index until the end
+ * If I specify only the starting index, I will get a string from that index until the end
  */
 
 let greeting = "hello world";

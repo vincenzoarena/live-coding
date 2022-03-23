@@ -8,7 +8,7 @@ console.log(string);
 console.log(string4);
 
 // to display a backslash in a string we need to escape it, basically we need
-// to write to backslash characters one after the other \\
+// to write two backslash characters one after the other \\
 
 let string5 = `this character is called backslash: \\ aaa`;
 console.log(string5);
