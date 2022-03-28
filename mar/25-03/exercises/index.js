@@ -1,5 +1,5 @@
 /**
- * Excercise 1
+ * Exercise 1
  * The Age Calculator
  * Find how old you will be in a future year
  * 
