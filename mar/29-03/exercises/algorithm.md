@@ -49,4 +49,4 @@ Step-by-step instructions:
     2. sum it to the latest even number I've just found on my list
     3. write the result on my piece of paper
     4. I cross the previous value for the sum
-5. I move to the next number in the list and repet from step 3 until I reach the last number
+5. I move to the next number in the list and repeat from step 3 until I reach the last number
