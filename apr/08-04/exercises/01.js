@@ -7,6 +7,17 @@
  * console.log(rangeBetween(-4, 7));
  * [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
+console.log("Task 01");
+function rangeBetween(num1, num2) {
+    let array = []
+    for (let i = num1; i <= num2; i++){
+     array.push(i);
+    }
+    return array;
+}
+console.log(rangeBetween(4, 7));
+console.log(rangeBetween(-4, 7));
+
 
 /**
  * 02 easy medium
@@ -18,6 +29,18 @@
  * [-6, -5, -4, -3]
  */
 
+console.log("Task 02");
+function arrayRange(num1, num2) {
+  const array = [];
+  for (let i = num1; i < num1 + num2; i++) {
+    array.push(i);
+  }
+  return array;
+}
+  
+console.log(arrayRange(1, 4));
+console.log(arrayRange(-6, 4));
+
 /**
  * 03 easy medium
  * Write a JavaScript function to switch positions of one array element.
@@ -28,13 +51,39 @@
  * [10, 50, 30, 40, 20]
  */
 
+console.log("Task 03");
+function moveIt(input, from, to) {
+  if (to >= input.length) {
+      let i = to - input.length + 1;
+      while (i--) {
+          input.push(undefined);
+      }
+  }
+  input.splice(to, 0, input.splice(from, 1)[0]);
+  return input;
+};
+
+console.log(moveIt([10, 20, 30, 40, 50], 0, 2));
+console.log(moveIt([10, 20, 30, 40, 50], 1, 4));
+
 /**
  * 04 easy
- * Write a function that accepts a string and and number of times that this string will fill
- * and return an array
+ * Write a function that accepts a string and number of times that this string will fill and return an array
  * example fillArray('some string', 4) should return 
  * ['some string', 'some string', 'some string', 'some string']
  */
+
+console.log("Task 04");
+function fillArray(string, copy) {
+  let array = [];
+  for (let i = 0; i < copy; i++) {
+    array.push(string)
+    
+  }
+  return array
+}
+
+console.log(fillArray('some string', 4));
 
 /**
  * 05 easy
@@ -43,12 +92,16 @@
  * console.log(randomItem(items));
  */
 
+ console.log("Task 05");
+
 /**
  * 06 easy
  * Write a function to find if an array contains a specific element
  * checkItem([2, 5, 9, 6], 5) should return true
  * checkItem([2, 5, 9, 6], 1) should return false
  */
+
+ console.log("Task 06");
 
 /**
  * 07 medium
@@ -59,12 +112,16 @@
  * mergeArrays(array1, array2) should return [3, 2, 30, 1] (the items can be with any order)
  */
 
+ console.log("Task 07");
+
 /**
  * 08 medium
  * Remove all duplicates from an array of integers
  * example: with input [1,2,3,1] the function
  * should return [1,2,3]
  */
+
+ console.log("Task 08");
 
 /**
  * 09 easy
@@ -81,6 +138,8 @@ cumin
 cocoa
  */
 
+console.log("Task 09");
+
 /**
  * 10 easy
  * Create an array of objects, where each object describes a book
@@ -93,6 +152,8 @@ cocoa
  * and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
  */
 
+ console.log("Task 10");
+
 /**
  * 11 easy
  * Write a function named helloWorld that:
@@ -101,6 +162,8 @@ cocoa
  * It should default to returning English.
  * Call that function for each of the supported languages and log the result to make sure it works.
  */
+
+ console.log("Task 11");
 
 /**
  * 12 easy
@@ -112,3 +175,5 @@ cocoa
  * 
  * example: pluralize('cat', 2) should return 2 cats
  */
+
+ console.log("Task 12");
